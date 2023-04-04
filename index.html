@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Consumption Grade</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="imgWrapper">
+            <img src="./image/DIAR-LOGO.png" alt="">
+        </div>
+        <div class="container">
+            <div class="from-wrapper">
+                <form action="">
+                    <div class="form-container">
+                        <h1>
+                            Fuel Consumption Grade
+                        </h1>
+                        <input type="text" placeholder="Vehicle Name" class="vehName" id="vehName">
+                        <div class="vehicle-group">
+                            <div>
+                                <label for="4wd">M1</label>
+                                <input type="radio" name="vehicleGroup" value="m1" id="m1" checked>
+                            </div>
+                            <div>
+                                <label for="4wd">N1, N2, M2</label>
+                                <input type="radio" name="vehicleGroup" value="n1" id="n1">
+                            </div>
+                        </div>
+                        <div class="gp">
+                            <label for="mess">Mass in Running</label>
+                            <input type="number" placeholder="Mass in Running" id="mess" required>
+                            <div id="kg">kg</div>
+                        </div>
+                        <div class="gp">
+                            <label for="co2">CO2</label>
+                            <input type="number" placeholder="CO2" id="co2" required>
+                            <div>g/km</div>
+                        </div>
+                        <div class="radioWrapper">
+                            <div>
+                                <label for="van">Van</label>
+                                <input type="checkbox" value="van" id="van">
+                            </div>
+                            <div>
+                                <label for="at">AT</label>
+                                <input type="checkbox" value="at" id="at">
+                            </div>
+                            <div>
+                                <label for="4wd">4WD</label>
+                                <input type="checkbox" value="4wd" id="4wd">
+                            </div>
+                        </div>
+                        <button id="submitBTN">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="grade-Output">
+                <div class="a-grade" id="aGrade">A</div>
+                <div class="b-grade" id="bGrade">B</div>
+                <div class="c-grade" id="cGrade">C</div>
+                <div class="d-grade" id="dGrade">D</div>
+                <div class="e-grade" id="eGrade">E</div>
+                <div class="f-grade" id="fGrade">F</div>
+                <div class="g-grade" id="gGrade">G</div>
+                <div class="rejected" id="rejected">Rejected</div>
+            </div>
+        </div>
+        <div id="message">
+            لطفا باکس جرم در حال حرکت را پر کنید
+        </div>
+        <button id="btnPrint"><i class="fa fa-print"></i> print</button>
+    </main>
+    <footer>
+        All rights <i class="fa fa-copyright"></i> are reserved by <b>Amirmohammad Hassanabadi</b>
+    </footer>
+    <!-- ===================================================================== -->
+    <article>
+        <img src="./image/DIAR-LOGO.png" alt="">
+        <h1>
+            Fuel Consumption Grade
+        </h1>
+        <table id="table">
+            <tr>
+                <th colspan="2">Vehicle Information</th>
+            </tr>
+            <tr>
+                <td>Vehicle Name</td>
+                <td id="nameTD"></td>
+            </tr>
+            <tr>
+                <td>Vehicle Group</td>
+                <td id="groupTD"></td>
+            </tr>
+            <tr>
+                <td>Mass in running</td>
+                <td id="messTD"></td>
+            </tr>
+            <tr>
+                <td>CO2</td>
+                <td id="coTD"></td>
+            </tr>
+            <tr>
+                <td>van</td>
+                <td id="vanTD"><i class="fa fa-close" style="color: crimson;"></i></td>
+            </tr>
+            <tr>
+                <td>AT</td>
+                <td id="atTD"><i class="fa fa-close" style="color: crimson;"></i></td>
+            </tr>
+            <tr>
+                <td>4WD</td>
+                <td id="4wdTD"><i class="fa fa-close" style="color: crimson;"></i></td>
+            </tr>
+            <tr>
+                <td>Fuel Consumption Grade</td>
+                <td id="fuelTD"></td>
+            </tr>
+        </table>
+        <div class="grade-Output">
+            <div class="a-grade" id="aGrade">A</div>
+            <div class="b-grade" id="bGrade">B</div>
+            <div class="c-grade" id="cGrade">C</div>
+            <div class="d-grade" id="dGrade">D</div>
+            <div class="e-grade" id="eGrade">E</div>
+            <div class="f-grade" id="fGrade">F</div>
+            <div class="g-grade" id="gGrade">G</div>
+            <div class="rejected" id="rejected">Rejected</div>
+        </div>
+    </article>
+
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>

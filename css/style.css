@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+tr{
+    border-bottom: 1px solid black !important;
+}
+
+body {
+background-color: #000;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.imgWrapper{
+    width: 250px;
+    margin: 30px auto;
+}
+
+.imgWrapper img{
+    width: 100%;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.from-wrapper {
+    width: 550px;
+    /* margin: 20px auto 0 auto; */
+}
+
+form {
+    width: 100%;
+}
+
+.form-container{
+    width: 75%;
+    padding: 35px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all .4s ease-in-out;
+}
+
+.form-container:hover{
+    box-shadow: crimson 0px 3px 8px;
+}
+
+label{
+    font-weight: 900;
+}
+
+form h1 {
+    color: whitesmoke;
+    padding: 20px;
+    padding-top: 0;
+    font-size: 1.5em;
+}
+
+.form-container input{
+    padding: 5px 10px;
+    width: 100%;
+    margin: 14px 0;
+    font-weight: 900;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid white;
+    color: crimson;
+    transition: all .4s ease-in-out;
+}
+
+.form-container input:focus{
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid crimson;
+}
+
+.vehName{
+    width: calc(100% - 21px) !important;
+}
+
+.gp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.gp label{
+    width: 40%;
+}
+.gp input{
+    width: 60% !important;
+}
+
+.gp div{
+    padding: 7px;
+    /* background-color: #000; */
+    color: aliceblue;
+    font-weight: 900;
+}
+
+#kg{
+    margin-left: 17px;
+}
+
+.vehicle-group{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.vehicle-group div{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.vehicle-group div label{
+    width: 90%;
+    text-align: center;
+}
+
+.vehicle-group div input{
+    width: 10%;
+}
+
+.radioWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.radioWrapper div{
+    display: flex;
+    align-items: center;
+}
+
+.radioWrapper div label{
+    margin-right: 10px;
+}
+
+.form-container button{
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: whitesmoke;
+    color: black;
+    border: 0;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 900;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.form-container button:hover{
+    background-color: #dc143c;
+    color: whitesmoke;
+}
+
+.grade-Output{
+    width: 40%;
+    border-radius:0 40px 40px 0 ;
+    padding: 10px;
+    margin: 20px 0;
+    /* margin: 30px auto; */
+}
+
+.grade-Output div{
+    color: whitesmoke;
+    border-radius:0 40px 40px 0 ;
+    padding: 10px;
+    margin-bottom: 10px;
+    opacity: 80%;
+}
+
+.a-grade{
+    width:280px;
+    background-color: #006600;
+}
+.b-grade{
+    width: 300px;
+    background-color: #009900;
+}
+.c-grade{
+    width: 320px;
+    background-color: #33cc33;
+}
+.d-grade{
+    width: 340px;
+    background-color: #e5e51b;
+}
+.e-grade{
+    width: 360px;
+    background-color: #f6bb00;
+}
+.f-grade{
+    width: 380px;
+    background-color: #e66914;
+}
+.g-grade{
+    width: 400px;
+    background-color: #c00000;
+}
+
+.rejected{
+    width: 420px;
+    background-color: #7e0000;
+}
+
+#message{
+    padding: 10px;
+    background-color: rgb(255, 210, 210);
+    color: crimson;
+    border: 2px solid crimson;
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 700;
+    display: none;
+    font-size: 1.2em;
+}
+
+::placeholder{
+    color: gray !important;
+}
+
+footer{
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    border-top:1px solid crimson ;
+    color: crimson;
+    background-color: #1a1a1a;
+    margin-top: 10px;
+}
+input[type='radio']{
+    accent-color: crimson;   
+}
+input[type="checkbox"] {
+    accent-color: crimson;   
+}
+/* ================================================================ */
+#btnPrint{
+    position: fixed;
+    top: 15px;
+    left: -115px;
+    padding: 10px 25px;
+    font-size: 1.1em;
+    border-radius: 20px;
+    border: 2px solid crimson;
+    color: crimson;
+    background-color: transparent;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+#btnPrint:hover{
+    background-color: crimson;
+    color: whitesmoke;
+}
+
+article{
+    display: none;
+}
+
+@media print{
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+     }
+
+     article img{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 90px;
+        height: auto;
+     }
+
+     body{
+        color: rgb(96, 96, 96);
+        background-color: #fff;
+     }
+
+    main, footer{
+        display: none;
+    }
+    article{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    article h1{
+        margin: 50px 0;
+        color: crimson;
+    }
+
+    article p{
+        text-align: justify;
+    }
+
+    article table{
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    article table{
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+    }
+
+    tr:nth-child(odd){
+        background-color: rgb(214, 214, 214);
+    }
+
+    tr:nth-child(1){
+        background-color: rgb(38, 38, 38);
+    }
+
+    td, th{
+        padding: 10px 0;
+    }
+
+    tr td:nth-child(1){
+        width: 70%;
+    }
+
+    tr td:nth-child(2){
+        width: 30%;
+        color: #000;
+    }
+
+    th{
+        color: whitesmoke;
+        font-size: 1.3em;
+    }
+
+    article .grade-Output{
+        margin: 50px 150px;
+    }
+
+    article .grade-Output div{
+        opacity: 10%;
+    }
+}
